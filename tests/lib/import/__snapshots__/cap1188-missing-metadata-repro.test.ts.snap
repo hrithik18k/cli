@@ -81,15 +81,15 @@ export const CAP1188_1_CP_TR = (props: ChipProps<typeof pinLabels>) => {
 <silkscreentext text="{NAME}" pcbX="-0.007493mm" pcbY="3.288921mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-2.5500842999999804,"y":2.5500842999999804},{"x":2.5500842999999804,"y":2.5500842999999804},{"x":2.5500842999999804,"y":-2.550084300000094},{"x":-2.5500842999999804,"y":-2.550084300000094},{"x":-2.5500842999999804,"y":2.5500842999999804}]} />
       </footprint>}
-      
+
       cadModel={{
         objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2652057.obj?uuid=a7b12dde0a7d4771a602d6847f242e5d",
         stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2652057.step?uuid=a7b12dde0a7d4771a602d6847f242e5d",
         pcbRotationOffset: 90,
         modelOriginPosition: {"x":0,"y":0,"z":2.8099909},
-      
+
       }}
-      
+
       {...props}
     />
   )
@@ -178,15 +178,15 @@ export const CAP1188_1_CP_TR = (props: ChipProps<typeof pinLabels>) => {
 <silkscreentext text="{NAME}" pcbX="-0.007493mm" pcbY="3.288921mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-2.5500842999999804,"y":2.5500842999999804},{"x":2.5500842999999804,"y":2.5500842999999804},{"x":2.5500842999999804,"y":-2.550084300000094},{"x":-2.5500842999999804,"y":-2.550084300000094},{"x":-2.5500842999999804,"y":2.5500842999999804}]} />
       </footprint>}
-      
+
       cadModel={{
         objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2652057.obj?uuid=a7b12dde0a7d4771a602d6847f242e5d",
         stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2652057.step?uuid=a7b12dde0a7d4771a602d6847f242e5d",
         pcbRotationOffset: 90,
         modelOriginPosition: {"x":0,"y":0,"z":2.8099909},
-      
+
       }}
-      
+
       {...props}
     />
   )

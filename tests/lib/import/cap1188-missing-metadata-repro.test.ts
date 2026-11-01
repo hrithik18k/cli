@@ -64,7 +64,7 @@ for (const hasMetadata of [false, true]) {
       const source = await readFile(filePath, "utf8")
       expect(datasheetRequests).toBe(1)
       // Snapshot the generated TSX as well as the missing-metadata schematic.
-      expect(source).toMatchSnapshot(
+      expect(source.replace(/[\t ]+$/gm, "")).toMatchSnapshot(
         hasMetadata
           ? "CAP1188 supplied metadata TSX"
           : "CAP1188 missing metadata TSX",
@@ -122,7 +122,9 @@ for (const hasMetadata of [false, true]) {
         expect(warn.mock.calls[0]![0]).toContain(
           "Verify electrical pin requirements against the datasheet",
         )
-        expect(convertCircuitJsonToSchematicSvg(json)).toMatchSvgSnapshot(
+        expect(
+          convertCircuitJsonToSchematicSvg(json).replace(/[\t ]+$/gm, ""),
+        ).toMatchSvgSnapshot(
           import.meta.path,
           "cap1188-missing-metadata-schematic",
         )
