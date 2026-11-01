@@ -345,11 +345,11 @@ for (const [raw, response, useExactFootprint] of [
 }
 
 for (const [name, response, warnings] of [
-  ["missing record", () => new Response(null, { status: 404 }), 0],
+  ["missing record", () => new Response(null, { status: 404 }), 1],
   [
     "missing attributes",
     () => Response.json({ datasheet: { chip_name: "AP2127K-28TRG1" } }),
-    0,
+    1,
   ],
   [
     "null attributes",
@@ -357,7 +357,7 @@ for (const [name, response, warnings] of [
       Response.json({
         datasheet: { chip_name: "AP2127K-28TRG1", pin_attributes: null },
       }),
-    0,
+    1,
   ],
   [
     "empty attributes",
@@ -365,7 +365,7 @@ for (const [name, response, warnings] of [
       Response.json({
         datasheet: { chip_name: "AP2127K-28TRG1", pin_attributes: {} },
       }),
-    0,
+    1,
   ],
   ["server error", () => new Response(null, { status: 503 }), 1],
   [
